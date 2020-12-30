@@ -1,0 +1,28 @@
+#!/bin/bash
+
+echo 'Do you want to install Docker? (y/N)'
+read -r -n 1 INSTALL_DOCKER
+echo
+
+if [[ "$INSTALL_DOCKER" = "y" ]]; then
+  echo Testing sudo
+  sudo echo OK
+  echo 
+  echo Installing Docker
+  echo 
+  sudo apt update
+  sudo apt install -y apt-transport-https ca-certificates curl software-properties-common
+  curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+  sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+  sudo apt update
+  apt-cache policy docker-ce
+  sudo apt install -y docker-ce docker-compose
+  echo 
+  echo Setting up Docker
+  echo 
+  sudo usermod -aG docker "${USER}"
+  echo 
+  echo Docker Hello World
+  echo 
+  docker run hello-world
+fi
