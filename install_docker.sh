@@ -16,7 +16,3 @@ echo
 echo Setting up Docker
 echo 
 sudo usermod -aG docker "${USER}"
-echo 
-echo Docker Hello World
-echo 
-docker run hello-world
