@@ -24,5 +24,3 @@ curl -sSL deb.tarsis.cc/install_python.sh | bash
 curl -sSL deb.tarsis.cc/install_vscode.sh | bash
 
 curl -sSL deb.tarsis.cc/git_config.sh | bash
-
-curl -sSL deb.tarsis.cc/install_sdkman.sh | bash
