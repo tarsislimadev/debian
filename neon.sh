@@ -16,6 +16,7 @@ sudo apt install -y nodejs
 wget 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64'
 mv download\?build\=stable\&os\=linux-deb-x64 code.deb
 sudo apt install -y ./code.deb
+sudo apt install gnome-keyring -y
 # installing Git
 sudo apt install -y git
 # install Java 8
