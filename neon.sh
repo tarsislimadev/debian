@@ -20,6 +20,11 @@ sudo apt install -y ./code.deb
 sudo apt install -y git
 # install Java 8
 sudo apt install openjdk-8-jre-headless -y 
+# stoping Journald
+sudo systemctl stop systemd-journald-audit.socket
+sudo systemctl stop systemd-journald-audit.socket
+sudo systemctl stop systemd-journald-dev-log.socket 
+sudo systemctl stop systemd-journald.service 
 # remove
 sudo apt remove --purge -y bluedevil bluez bluez-cups bluez-obexd
 sudo apt remove --purge -y gwenview ark okular-backends kdeconnect plasma-discover-common vlc
