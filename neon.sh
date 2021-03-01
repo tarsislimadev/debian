@@ -1,4 +1,4 @@
-sudo apt update -y 
+sudo apt update -y
 # installing Brave
 sudo apt install -y apt-transport-https curl gnupg
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
@@ -22,12 +22,12 @@ sudo apt install -y git
 # stoping Journald
 sudo systemctl stop systemd-journald-audit.socket
 sudo systemctl stop systemd-journald-audit.socket
-sudo systemctl stop systemd-journald-dev-log.socket 
-sudo systemctl stop systemd-journald.service 
+sudo systemctl stop systemd-journald-dev-log.socket
+sudo systemctl stop systemd-journald.service
 # Able to watch for file changes in this large workspace
 sudo bash -c 'echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf'
 sudo sysctl -p
 # remove
 sudo apt remove --purge -y bluedevil bluez bluez-cups bluez-obexd
 sudo apt remove --purge -y gwenview ark okular-backends kdeconnect plasma-discover-common vlc
-sudo apt remove --purge -y firefox snapd 
+sudo apt remove --purge -y firefox snapd
