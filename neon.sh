@@ -19,8 +19,6 @@ sudo apt install -y ./code.deb
 sudo apt install gnome-keyring -y
 # installing Git
 sudo apt install -y git
-# install Java 8
-sudo apt install openjdk-8-jre-headless -y 
 # stoping Journald
 sudo systemctl stop systemd-journald-audit.socket
 sudo systemctl stop systemd-journald-audit.socket
