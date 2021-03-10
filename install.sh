@@ -23,6 +23,8 @@ curl -sSL deb.tarsis.cc/install_python.sh | bash
 
 curl -sSL deb.tarsis.cc/install_vscode.sh | bash
 
+curl -sSL deb.tarsis.cc/install_brave.sh | bash
+
 curl -sSL deb.tarsis.cc/git_config.sh | bash
 
 curl -sSL deb.tarsis.cc/install_dbeaver.sh | bash
