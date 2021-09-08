@@ -116,9 +116,11 @@ sudo apt remove --purge -y avahi-daemon
 
 # stoping Journald
 sudo systemctl stop systemd-journald-audit.socket
-sudo systemctl stop systemd-journald-audit.socket
+sudo systemctl disable systemd-journald-audit.socket
 sudo systemctl stop systemd-journald-dev-log.socket
+sudo systemctl disable systemd-journald-dev-log.socket
 sudo systemctl stop systemd-journald.service
+sudo systemctl disable systemd-journald.service
 
 # Able to watch for file changes in this large workspace
 sudo bash -c 'echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf'
