@@ -128,3 +128,6 @@ sudo sysctl -p
 
 # Removing useless network apps
 sudo mv /usr/bin/networkd-dispatcher /usr/bin/-123networkd-dispatcher
+
+# Removing others
+sudo apt autoremove --purge -y
