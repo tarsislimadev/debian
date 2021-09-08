@@ -113,6 +113,12 @@ sudo apt remove --purge -y vlc
 sudo apt remove --purge -y snapd
 sudo apt remove --purge -y cups-common
 sudo apt remove --purge -y avahi-daemon
+sudo apt remove --purge -y libpam-kwallet5
+sudo apt remove --purge -y libpam-kwallet-common
+sudo apt remove --purge -y kwalletmanager
+sudo apt remove --purge -y libkf5wallet-bin
+sudo apt remove --purge -y libkf5wallet-bin
+sudo apt remove --purge -y signon-kwallet-extension
 
 # stoping Journald
 sudo systemctl stop systemd-journald-audit.socket
