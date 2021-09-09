@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  upload:
+    image: node:lts
+    working_dir: '/app'
+    volumes:
+      - '.:/app'
