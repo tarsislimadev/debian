@@ -9,3 +9,7 @@ To install programs, run:
 ```sh
 curl -sSL deb.tarsis.cc/install.sh | bash 
 ```
+
+### License
+
+[MIT](LICENSE)
