@@ -9,7 +9,7 @@ sudo apt update
 sudo apt install -y python3 python3-pip
 sudo apt update
 echo 
-echo Setting up Docker
+echo Setting up Python 3
 echo 
 sudo ln -fs /usr/bin/python3 /usr/bin/python
 sudo ln -fs /usr/bin/pip3 /usr/bin/pip
