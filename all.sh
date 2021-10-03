@@ -9,3 +9,5 @@ curl -sSL deb.tarsis.cc/python.sh | bash
 curl -sSL deb.tarsis.cc/dbeaver.sh | bash
 
 curl -sSL deb.tarsis.cc/gh.sh | bash
+
+curl -sSL deb.tarsis.cc/bash.sh | bash
