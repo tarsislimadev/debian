@@ -5,6 +5,10 @@ sudo echo OK
 
 curl -sSL deb.tarsis.cc/remove.sh | bash
 
+curl -sSL deb.tarsis.cc/linux.sh | bash
+
+curl -sSL deb.tarsis.cc/bash.sh | bash
+
 curl -sSL deb.tarsis.cc/brave.sh | bash
 
 curl -sSL deb.tarsis.cc/node.sh | bash
