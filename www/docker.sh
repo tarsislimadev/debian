@@ -17,9 +17,9 @@ echo Setting up Docker
 echo 
 sudo usermod -aG docker "${USER}"
 echo
-echo Installing Docker Compose
+echo Installing Docker Compose v2.0.1
 echo
-sudo curl -L "https://github.com/docker/compose/releases/download/1.28.5/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/v2.0.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 echo
 echo Docker version
