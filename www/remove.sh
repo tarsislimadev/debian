@@ -6,6 +6,17 @@ sudo echo OK
 echo
 echo Removing Useless Apps
 echo
+sudo apt remove -y --purge printer-driver-foo2zjs-common
+sudo apt remove -y --purge plasma-discover-common
+sudo apt remove -y --purge xreader-common
+sudo apt remove -y --purge onboard-common
+sudo apt remove -y --purge hexchat-common
+sudo apt remove -y --purge transmission-common
+sudo apt remove -y --purge samba-common-bin
+sudo apt remove -y --purge libreoffice-common
+sudo apt remove -y --purge gnome-settings-daemon-common
+sudo apt remove -y --purge cups-common
+sudo apt remove -y --purge libpam-kwallet-common
 sudo apt remove -y --purge *samba*
 sudo apt remove -y --purge *vpn*
 sudo apt remove -y --purge printer-driver-brlaser
@@ -19,12 +30,10 @@ sudo apt remove -y --purge printer-driver-splix
 sudo apt remove -y --purge printer-driver-foo2zjs
 sudo apt remove -y --purge printer-driver-m2300w
 sudo apt remove -y --purge printer-driver-ptouch
-sudo apt remove -y --purge printer-driver-foo2zjs-common
 sudo apt remove -y --purge printer-driver-min12xxw
 sudo apt remove -y --purge printer-driver-pxljr
 sudo apt remove -y --purge konqueror
 sudo apt remove -y --purge kate
-sudo apt remove -y --purge plasma-discover-common
 sudo apt remove -y --purge drawing
 sudo apt remove -y --purge gwenview
 sudo apt remove -y --purge okular-extra-backends
@@ -42,10 +51,8 @@ sudo apt remove -y --purge gucharmap
 sudo apt remove -y --purge baobab
 sudo apt remove -y --purge xviewer-dbg
 sudo apt remove -y --purge xviewer
-sudo apt remove -y --purge xreader-common
 sudo apt remove -y --purge gnote
 sudo apt remove -y --purge kfind
-sudo apt remove -y --purge onboard-common
 sudo apt remove -y --purge redshift
 sudo apt remove -y --purge redshift-gtk
 sudo apt remove -y --purge warpinator
@@ -54,8 +61,6 @@ sudo apt remove -y --purge muon
 sudo apt remove -y --purge akregator
 sudo apt remove -y --purge firefox
 sudo apt remove -y --purge firefox-locale-en
-sudo apt remove -y --purge hexchat-common
-sudo apt remove -y --purge transmission-common
 sudo apt remove -y --purge thunderbird
 sudo apt remove -y --purge thunderbird-gnome-support
 sudo apt remove -y --purge python3-soupsieve
@@ -63,11 +68,9 @@ sudo apt remove -y --purge kio-sieve
 sudo apt remove -y --purge kio-ldap
 sudo apt remove -y --purge openvpn
 sudo apt remove -y --purge openssh-client
-sudo apt remove -y --purge samba-common-bin
 sudo apt remove -y --purge pim-sieve-editor
 sudo apt remove -y --purge simple-scan
 sudo apt remove -y --purge kopete-data
-sudo apt remove -y --purge libreoffice-common
 sudo apt remove -y --purge timeshift
 sudo apt remove -y --purge plasma-browser-integration
 sudo apt remove -y --purge qt5-gtk2-platformtheme
@@ -100,7 +103,6 @@ sudo apt remove -y --purge gnome-settings-daemon
 sudo apt remove -y --purge gnome-themes-standard
 sudo apt remove -y --purge gnome-disk-utility
 sudo apt remove -y --purge gnome-logs
-sudo apt remove -y --purge gnome-settings-daemon-common
 sudo apt remove -y --purge bluedevil
 sudo apt remove -y --purge bluez
 sudo apt remove -y --purge bluez-cups
@@ -111,10 +113,8 @@ sudo apt remove -y --purge okular-backends
 sudo apt remove -y --purge kdeconnect
 sudo apt remove -y --purge vlc
 sudo apt remove -y --purge snapd
-sudo apt remove -y --purge cups-common
 sudo apt remove -y --purge avahi-daemon
 sudo apt remove -y --purge libpam-kwallet5
-sudo apt remove -y --purge libpam-kwallet-common
 sudo apt remove -y --purge kwalletmanager
 sudo apt remove -y --purge libkf5wallet-bin
 sudo apt remove -y --purge libkf5wallet-bin
@@ -133,7 +133,7 @@ sudo bash -c 'echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf'
 sudo sysctl -p
 
 # Removing useless network apps
-sudo mv /usr/bin/networkd-dispatcher /usr/bin/-123networkd-dispatcher
+sudo mv /usr/bin/networkd-dispatcher /usr/bin/---123network
 
 # Removing others
-sudo apt autoremove --purge
+sudo apt autoremove -y --purge
