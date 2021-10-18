@@ -67,7 +67,7 @@ sudo apt remove -y --purge python3-soupsieve
 sudo apt remove -y --purge kio-sieve
 sudo apt remove -y --purge kio-ldap
 sudo apt remove -y --purge openvpn
-sudo apt remove -y --purge openssh-client
+# sudo apt remove -y --purge openssh-client
 sudo apt remove -y --purge pim-sieve-editor
 sudo apt remove -y --purge simple-scan
 sudo apt remove -y --purge kopete-data
