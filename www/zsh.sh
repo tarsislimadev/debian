@@ -6,9 +6,9 @@ echo
 echo Installing Zsh
 echo
 sudo apt install -y zsh
-chsh -s $(which zsh)
+sudo chsh -s $( which zsh )
 echo
-echo Installing Oh My Zsh (from GitHub)
+echo Installing Oh My Zsh
 echo
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sudo bash
 echo
