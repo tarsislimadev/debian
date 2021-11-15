@@ -1,5 +1,0 @@
-
-[x] Corrigir versão do Docker Compose
-[x] Corrigir versão do Insomnia
-[x] Corrigir versão do Chrome nos downloads do Insomnia, VSCode e DBeaver
-[ ] Adicionar Dockerfile para facilitar o deploy do projeto
