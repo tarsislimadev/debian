@@ -15,6 +15,11 @@ curl -sSL deb.tarsis.cc/all.sh | bash
 curl -sSL deb.tarsis.cc/min.sh | bash 
 ```
 
+### Stack
+
+* [Bash](#)
+* [Docker](https://www.docker.com/)
+
 ### License
 
 [MIT](LICENSE)
