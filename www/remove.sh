@@ -121,12 +121,14 @@ sudo apt remove -y --purge libkf5wallet-bin
 sudo apt remove -y --purge signon-kwallet-extension
 
 # stoping Journald
+sudo systemctl stop systemd-journald.service
+sudo systemctl disable systemd-journald.service
 sudo systemctl stop systemd-journald-audit.socket
 sudo systemctl disable systemd-journald-audit.socket
 sudo systemctl stop systemd-journald-dev-log.socket
 sudo systemctl disable systemd-journald-dev-log.socket
-sudo systemctl stop systemd-journald.service
-sudo systemctl disable systemd-journald.service
+sudo systemctl stop systemd-journald.socket
+sudo systemctl disable systemd-journald.socket
 
 # Able to watch for file changes in this large workspace
 sudo bash -c 'echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf'
