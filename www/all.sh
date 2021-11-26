@@ -11,5 +11,3 @@ curl -sSL deb.tarsis.cc/dbeaver.sh | bash
 curl -sSL deb.tarsis.cc/gh.sh | bash
 
 curl -sSL deb.tarsis.cc/insomnia.sh | bash
-
-curl -sSL deb.tarsis.cc/teams.sh | bash
