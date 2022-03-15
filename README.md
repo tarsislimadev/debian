@@ -23,3 +23,7 @@ curl -sSL deb.tarsis.cc/min.sh | bash
 ### License
 
 [MIT](LICENSE)
+
+### Update
+
+Updated 2022-03-15
