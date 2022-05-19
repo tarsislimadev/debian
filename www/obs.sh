@@ -8,7 +8,7 @@ echo Installing OBS
 echo 
 sudo add-apt-repository ppa:obsproject/obs-studio
 sudo apt update
-sudo apt install -y ffmpeg obs-studio
+sudo apt install -y ffmpeg obs-studio vlc
 
 echo
 echo OBS OK
