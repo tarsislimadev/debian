@@ -5,7 +5,7 @@ sudo echo OK
 
 curl -sSL deb.tarsis.cc/remove.sh | bash
 
-curl -sSL deb.tarsis.cc/linux.sh | bash
+curl -sSL deb.tarsis.cc/gnome-keyring.sh | bash
 
 curl -sSL deb.tarsis.cc/alias.sh | bash
 
