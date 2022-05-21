@@ -3,13 +3,9 @@
 echo Testing sudo
 sudo echo OK
 
-echo 
-echo Installing OBS
-echo 
-sudo add-apt-repository ppa:obsproject/obs-studio
-sudo apt update
-sudo apt install -y ffmpeg obs-studio vlc
-
 echo
-echo OBS OK
-echo 
+echo Install OBS and VLC
+echo
+sudo add-apt-repository ppa:obsproject/obs-studio
+sudo apt update -y
+sudo apt install -y ffmpeg obs-studio vlc

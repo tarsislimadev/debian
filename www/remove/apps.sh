@@ -67,7 +67,6 @@ sudo apt remove -y --purge python3-soupsieve
 sudo apt remove -y --purge kio-sieve
 sudo apt remove -y --purge kio-ldap
 sudo apt remove -y --purge openvpn
-# sudo apt remove -y --purge openssh-client
 sudo apt remove -y --purge pim-sieve-editor
 sudo apt remove -y --purge simple-scan
 sudo apt remove -y --purge kopete-data
@@ -94,11 +93,9 @@ sudo apt remove -y --purge gnome-icon-theme
 sudo apt remove -y --purge gnome-orca
 sudo apt remove -y --purge gnome-themes-extra
 sudo apt remove -y --purge gnome-calculator
-sudo apt remove -y --purge gnome-keyring
 sudo apt remove -y --purge gnome-session-canberra
 sudo apt remove -y --purge gnome-themes-extra-data
 sudo apt remove -y --purge gnome-desktop3-data
-sudo apt remove -y --purge gnome-keyring-pkcs11
 sudo apt remove -y --purge gnome-settings-daemon
 sudo apt remove -y --purge gnome-themes-standard
 sudo apt remove -y --purge gnome-disk-utility
@@ -120,7 +117,9 @@ sudo apt remove -y --purge libkf5wallet-bin
 sudo apt remove -y --purge libkf5wallet-bin
 sudo apt remove -y --purge signon-kwallet-extension
 
-# stoping Journald
+echo
+echo stoping Journald
+echo 
 sudo systemctl stop systemd-journald.service
 sudo systemctl disable systemd-journald.service
 sudo systemctl stop systemd-journald-audit.socket
@@ -130,12 +129,18 @@ sudo systemctl disable systemd-journald-dev-log.socket
 sudo systemctl stop systemd-journald.socket
 sudo systemctl disable systemd-journald.socket
 
-# Able to watch for file changes in this large workspace
+echo
+echo Enable max_user_watches
+echo
 sudo bash -c 'echo "fs.inotify.max_user_watches=524288" >> /etc/sysctl.conf'
 sudo sysctl -p
 
-# Removing useless network apps
+echo
+echo Removing useless network apps
+echo
 sudo mv /usr/bin/networkd-dispatcher /usr/bin/---123network
 
-# Removing others
+echo
+echo Removing others
+echo
 sudo apt autoremove -y --purge

@@ -2,6 +2,7 @@
 
 echo Testing sudo
 sudo echo OK
+
 echo 
 echo Installing Brave
 echo 
@@ -11,7 +12,10 @@ curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt
 echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable main" | sudo tee /etc/apt/sources.list.d/brave-browser-release.list
 sudo apt update
 sudo apt install -y brave-browser
+
 echo
 echo Brave version
 echo
 brave-browser --version 
+echo
+echo

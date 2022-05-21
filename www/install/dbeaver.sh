@@ -2,12 +2,16 @@
 
 echo Testing sudo
 sudo echo OK
-echo 
+
+echo
 echo Installing DBeaver Community Edition
-echo 
+echo
+
 sudo add-apt-repository -y ppa:serge-rider/dbeaver-ce
 sudo apt-get update -y
 sudo apt-get install -y dbeaver-ce
-echo 
+
+echo
 [[ -e "$(which dbeaver)" ]] && echo DBeaver Installed 
-echo 
+echo
+

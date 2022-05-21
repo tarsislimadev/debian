@@ -13,9 +13,3 @@ echo
 echo Git version
 echo
 git --version
-
-echo 
-echo ******************
-echo *** Set up Git ***
-echo ******************
-echo 

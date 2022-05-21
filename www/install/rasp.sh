@@ -89,11 +89,9 @@ sudo apt remove -y --purge gnome-icon-theme
 sudo apt remove -y --purge gnome-orca
 sudo apt remove -y --purge gnome-themes-extra
 sudo apt remove -y --purge gnome-calculator
-sudo apt remove -y --purge gnome-keyring
 sudo apt remove -y --purge gnome-session-canberra
 sudo apt remove -y --purge gnome-themes-extra-data
 sudo apt remove -y --purge gnome-desktop3-data
-sudo apt remove -y --purge gnome-keyring-pkcs11
 sudo apt remove -y --purge gnome-settings-daemon
 sudo apt remove -y --purge gnome-themes-standard
 sudo apt remove -y --purge gnome-disk-utility
