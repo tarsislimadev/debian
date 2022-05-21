@@ -29,7 +29,6 @@ curl deb.tarsis.cc/all.sh | bash
 * Git
 * Node.js LTS
 * Brave Brwoser
-* GNOME keyring
 * Visual Studio Code
 
 ```sh
@@ -112,12 +111,6 @@ curl deb.tarsis.cc/kube.sh | bash
 
 ```sh
 curl deb.tarsis.cc/kvm.sh | bash
-```
-
-### [GNOME keyring]()
-
-```sh
-curl deb.tarsis.cc/gnome-keyring.sh | bash
 ```
 
 ### [Minikube (from k8s)]()
