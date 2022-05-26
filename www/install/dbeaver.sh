@@ -12,6 +12,6 @@ sudo apt-get update -y
 sudo apt-get install -y dbeaver-ce
 
 echo
-[[ -e "$(which dbeaver)" ]] && echo DBeaver Installed 
+[[ -e "$(which dbeaver)" ]] && echo DBeaver Installed
 echo
 

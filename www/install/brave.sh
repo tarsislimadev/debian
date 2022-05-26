@@ -3,9 +3,9 @@
 echo Testing sudo
 sudo echo OK
 
-echo 
+echo
 echo Installing Brave
-echo 
+echo
 sudo apt update
 sudo apt install -y apt-transport-https curl gnupg
 curl -s https://brave-browser-apt-release.s3.brave.com/brave-core.asc | sudo apt-key --keyring /etc/apt/trusted.gpg.d/brave-browser-release.gpg add -
@@ -16,6 +16,6 @@ sudo apt install -y brave-browser
 echo
 echo Brave version
 echo
-brave-browser --version 
+brave-browser --version
 echo
 echo

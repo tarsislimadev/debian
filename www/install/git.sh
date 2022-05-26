@@ -3,9 +3,9 @@
 echo Testing sudo
 sudo echo OK
 
-echo 
+echo
 echo Installing Git
-echo 
+echo
 sudo apt update
 sudo apt install -y git
 
