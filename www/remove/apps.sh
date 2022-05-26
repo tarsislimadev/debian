@@ -119,7 +119,7 @@ sudo apt remove -y --purge signon-kwallet-extension
 
 echo
 echo stoping Journald
-echo 
+echo
 sudo systemctl stop systemd-journald.service
 sudo systemctl disable systemd-journald.service
 sudo systemctl stop systemd-journald-audit.socket
