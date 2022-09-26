@@ -11,4 +11,4 @@ sudo apt install -y awscli
 echo
 echo Version of AWS CLI
 echo
-awscli --version
+aws --version
