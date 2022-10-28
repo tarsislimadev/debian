@@ -1,30 +1,30 @@
-# Debian Setup
+# Configuração para Debian e Ubuntu
 
-This repository has files to install programs on Ubuntu-based operating systems
+Executáveis para sistemas Linux-based
 
-## How to do
+## Como usar
 
-* To install all programs, run:
+* Para instalar todos os programas, execute:
 
 ```sh
 curl deb.tarsis.cc/install/all.sh | bash
 ```
 
-* To install many programs, run:
+* Para instalar os programas básicos, execute:
 
 ```sh
 curl deb.tarsis.cc/install/min.sh | bash
 ```
 
-## Installers
+## Instaladores
 
-### To install all
+### Para instalar todos
 
 ```sh
 curl deb.tarsis.cc/install/all.sh | bash
 ```
 
-### To install the basic
+### Para instalar os básicos
 
 * Git
 * Node.js LTS
@@ -149,18 +149,15 @@ curl deb.tarsis.cc/install/terraform.sh | bash
 curl deb.tarsis.cc/install/vscode.sh | bash
 ```
 
-## Removers
+## Removedores
 
-### Remove useless apps and clean up
+### Limpeza
 
 ```sh
 curl deb.tarsis.cc/install/remove.sh | bash
 ```
 
-## License
+## Licença
 
-[MIT](LICENSE)
+[MIT](./LICENSE)
 
-### Update
-
-Updated 2022-05-20
