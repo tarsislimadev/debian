@@ -1,0 +1,14 @@
+name: Surge upload
+
+on:
+  workflow_dispatch:
+  push:
+    branches: 
+      - 'main'
+
+jobs:
+  docker-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Pulling up project
+      - name: Deploying the project
