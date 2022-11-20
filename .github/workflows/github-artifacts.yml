@@ -6,10 +6,14 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v3
+      - run: mkdir -p path/to/artifact
+      
+      - run: echo hello > path/to/artifact/world.txt
+      
+      - uses: actions/upload-artifact@v3
         with:
-          path: www
+          name: my-artifact
+          path: path/to/artifact/world.txt
+    
