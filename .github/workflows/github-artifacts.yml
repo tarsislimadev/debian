@@ -10,8 +10,10 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Tar files
+        run: tar -cvf debian.tar /www
+
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
         with:
-          name: dist-without-markdown
-          path: www
+          path: /debian.tar
