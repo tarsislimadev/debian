@@ -13,7 +13,5 @@ sudo apt install -y rpi-imager
 echo
 echo Downloading Raspberry Pi Desktop OS
 echo
-wget 'https://downloads.raspberrypi.org/raspios_arm64/images/raspios_arm64-2022-09-26/2022-09-22-raspios-bullseye-arm64.img.xz'
-wget 'https://downloads.raspberrypi.org/raspios_lite_arm64/images/raspios_lite_arm64-2022-09-26/2022-09-22-raspios-bullseye-arm64-lite.img.xz'
-
+wget http://www.cdimage.ubuntu.com/ubuntu/releases/22.04/release/ubuntu-22.04.1-preinstalled-server-armhf+raspi.img.xz
 
