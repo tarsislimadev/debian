@@ -1,6 +1,9 @@
 name: GitHub Artifacts
 
-on: [push]
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '15 10 * * *'
 
 jobs:
   upload:
@@ -8,6 +11,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: zip debian.zip www/
-      - run: gh release create v0.0.1 debian.zip
+      - run: gh release create  echo v$( date +%Y%m%d ) debian.zip
         env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
