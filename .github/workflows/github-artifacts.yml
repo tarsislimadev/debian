@@ -14,6 +14,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: zip debian.zip www/
-      - run: gh release create  echo v$( date +%Y%m%d ) debian.zip
+      - run: gh release create v$( date +%Y%m%d ) debian.zip
         env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
