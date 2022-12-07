@@ -1,10 +1,10 @@
 name: GitHub Artifacts
 
 on:
+  workflow_dispatch:
   push:
     branches: 
       - 'main'
-  workflow_dispatch:
   schedule:
     - cron: '15 10 * * *'
 
@@ -12,8 +12,13 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - run: zip debian.zip www/
-      - run: gh release create v$( date +%Y%m%d ) debian.zip
+      - name: Check out
+        uses: actions/checkout@v3
+      
+      - name: Zip debian files
+        run: zip debian.zip www/
+      
+      - name: Create release
+        run: gh release create v$( date +%Y%m%d ) debian.zip
         env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
