@@ -16,7 +16,7 @@ jobs:
         uses: actions/checkout@v3
       
       - name: Zip debian files
-        run: zip debian.zip www/
+        run: zip debian.zip src/
       
       - name: Create release
         run: gh release create v$( date +%Y%m%d ) debian.zip
