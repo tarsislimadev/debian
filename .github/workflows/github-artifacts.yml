@@ -6,7 +6,7 @@ on:
     branches: 
       - 'main'
   schedule:
-    - cron: '15 10 * * *'
+    - cron: '50 23 * * *'
 
 jobs:
   upload:
@@ -19,6 +19,6 @@ jobs:
         run: zip debian.zip src/
       
       - name: Create release
-        run: gh release create v$( date +%Y%m%d ) debian.zip
+        run: gh release create v$( date +'%Y%m%d%H%M%S' ) debian.zip
         env:
             GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
