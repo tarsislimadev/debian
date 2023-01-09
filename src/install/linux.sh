@@ -4,6 +4,11 @@ echo Testing sudo
 sudo echo OK
 
 echo
+echo Cmake
+echo
+sudo apt install -y cmake
+
+echo
 echo Rsync
 echo
 alias nr=' rm -rf $HOME/pub/kde && mkdir -p $HOME/pub/kde && rsync -rlpt --delete rsync.kde.org::kdeftp $HOME/pub/kde & '
