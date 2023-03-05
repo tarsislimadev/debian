@@ -10,7 +10,7 @@ echo
 sudo apt -y update
 VSCODE_PATH=$HOME/code.deb
 
-curl -sSL https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64 --compressed --output $VSCODE_PATH
+curl -sSL 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64' --compressed --output $VSCODE_PATH
 
 sudo apt install -y $VSCODE_PATH
 rm -rf $VSCODE_PATH
