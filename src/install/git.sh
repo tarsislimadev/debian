@@ -7,7 +7,7 @@ echo
 echo Installing Git
 echo
 sudo apt update
-sudo apt install -y git
+sudo apt install -y git make
 
 echo
 echo Git version
