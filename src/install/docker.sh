@@ -18,6 +18,7 @@ sudo apt-get install -y docker-compose
 echo
 echo Setting up Docker
 echo
+sudo chmod 777 /var/run/docker.sock
 sudo usermod -aG docker "${USER}"
 
 echo
@@ -26,4 +27,3 @@ echo Docker version
 echo
 docker --version
 docker-compose --version
-
