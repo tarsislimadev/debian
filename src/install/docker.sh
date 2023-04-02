@@ -20,6 +20,7 @@ echo Setting up Docker
 echo
 sudo chmod 777 /var/run/docker.sock
 sudo usermod -aG docker "${USER}"
+sudo chmod 777 /var/run/docker.sock
 
 echo
 echo
@@ -27,3 +28,4 @@ echo Docker version
 echo
 docker --version
 docker-compose --version
+
