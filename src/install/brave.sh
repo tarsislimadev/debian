@@ -13,6 +13,12 @@ echo "deb [arch=amd64] https://brave-browser-apt-release.s3.brave.com/ stable ma
 sudo apt update
 sudo apt install -y brave-browser
 
+
+echo
+echo Setting up Brave
+echo
+echo 'alias b="brave-browser-stable & " ' >> ~/.bashrc 
+
 echo
 echo Brave version
 echo
