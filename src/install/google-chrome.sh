@@ -21,6 +21,12 @@ sudo apt update -y
 sudo apt install -y "./${FILENAME}"
 rm -rf "./${FILENAME}"
 
+
+echo
+echo Setting up Google Chrome
+echo
+echo 'alias g="google-chrome-stable & " ' >> ~/.bashrc 
+
 echo
 echo Google Chrome version
 echo
