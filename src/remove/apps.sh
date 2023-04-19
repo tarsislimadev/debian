@@ -108,7 +108,6 @@ sudo apt remove -y --purge gwenview
 sudo apt remove -y --purge ark
 sudo apt remove -y --purge okular-backends
 sudo apt remove -y --purge kdeconnect
-sudo apt remove -y --purge vlc
 sudo apt remove -y --purge snapd
 sudo apt remove -y --purge avahi-daemon
 sudo apt remove -y --purge libpam-kwallet5
