@@ -18,14 +18,16 @@ sudo apt-get install -y docker-compose
 echo
 echo Setting up Docker
 echo
-sudo chmod 777 /var/run/docker.sock
 sudo usermod -aG docker "${USER}"
 sudo chmod 777 /var/run/docker.sock
 
-echo
 echo
 echo Docker version
 echo
 docker --version
 docker-compose --version
 
+echo
+echo Docker configuration
+echo
+sudo systemctl restart docker 
