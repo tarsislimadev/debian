@@ -6,4 +6,4 @@ sudo echo OK
 echo
 echo Install kdenlive
 echo
-sudo apt install kdenlive
+sudo apt -y install kdenlive

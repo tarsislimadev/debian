@@ -6,8 +6,8 @@ sudo echo OK
 echo
 echo Installing Authy
 echo
-sudo apt update -y
-sudo apt install -y snapd
+sudo apt -y update
+sudo apt -y install snapd
 sudo snap install authy
 
 echo

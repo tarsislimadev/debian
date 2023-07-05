@@ -10,7 +10,7 @@ echo
 echo
 echo Installing Flutter
 echo
-sudo apt-get update
+sudo apt -y update
 wget 'https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.3.10-stable.tar.xz'
 tar -xf 'flutter_linux_3.3.10-stable.tar.xz'
 mv flutter/ $HOME/.flutter/

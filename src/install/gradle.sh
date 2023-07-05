@@ -7,7 +7,7 @@ FILENAME=gradle-7.3.3-bin.zip
 
 echo
 echo Installing Gradle
-sudo apt update -y
+sudo apt -y update
 curl -sSL 'https://services.gradle.org/distributions/${FILENAME}' --output $FILENAME
 mkdir -p ~/.gradle
 unzip -d ~/.gradle $FILENAME

@@ -6,5 +6,5 @@ sudo echo OK
 echo
 echo Installing JQ
 echo
-sudo apt update -y
-sudo apt install -y jq
+sudo apt -y update
+sudo apt -y install jq

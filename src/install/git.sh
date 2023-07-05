@@ -6,8 +6,8 @@ sudo echo OK
 echo
 echo Installing Git
 echo
-sudo apt update
-sudo apt install -y git make
+sudo apt -y update
+sudo apt -y install git make
 
 echo
 echo Git version

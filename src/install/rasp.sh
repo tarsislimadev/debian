@@ -7,8 +7,8 @@ echo
 echo Installing Raspberry Pi Imager
 echo
 wget 'https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb'
-sudo apt install -y ./imager_latest_amd64.deb
-sudo apt install -y rpi-imager
+sudo apt -y install ./imager_latest_amd64.deb
+sudo apt -y install rpi-imager
 
 echo
 echo Downloading Raspberry Pi Desktop OS

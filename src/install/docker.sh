@@ -6,14 +6,14 @@ sudo echo OK
 echo
 echo Removing older Docker installations
 echo
-sudo apt remove --purge -y docker-* containerd.io
-sudo apt autoremove --purge -y
+sudo apt -y remove --purge docker-* containerd.io
+sudo apt -y autoremove --purge
 
 echo
 echo Installing Docker and Docker Compose
 echo
-sudo apt-get update
-sudo apt-get install -y docker-compose
+sudo apt -y update
+sudo apt -y install docker-compose
 
 echo
 echo Setting up Docker
