@@ -13,7 +13,7 @@ echo
 echo Installing Docker and Docker Compose
 echo
 sudo apt -y update
-sudo apt -y install docker-compose
+sudo apt -y install docker-compose podman
 
 echo
 echo Setting up Docker
