@@ -30,4 +30,6 @@ docker-compose --version
 echo
 echo Docker configuration
 echo
+echo "export DOCKER_CLIENT_TIMEOUT=120" >> ~/.bashrc
+echo "export COMPOSE_HTTP_TIMEOUT=120" >> ~/.bashrc
 sudo systemctl restart docker 
