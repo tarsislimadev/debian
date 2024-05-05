@@ -1,6 +1,6 @@
 #!/bin/bash
 
-bash ./install/brave.sh
+bash ./install/google-chrome.sh
 
 bash ./install/gh.sh
 
