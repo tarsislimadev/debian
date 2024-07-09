@@ -1,13 +1,13 @@
 #!/bin/bash
 
-bash ./install/google-chrome.sh
+. ./install/google-chrome.sh
 
-bash ./install/gh.sh
+. ./install/gh.sh
 
-bash ./install/vscode.sh
+. ./install/vscode.sh
 
-bash ./install/docker.sh
+. ./install/docker.sh
 
-bash ./install/ffmpeg.sh
+. ./install/ffmpeg.sh
 
-bash ./install/notify.sh
+. ./install/notify.sh
