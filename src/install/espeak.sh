@@ -7,5 +7,5 @@ echo
 echo Installing eSpeak
 echo
 sudo apt -y update
-sudo apt install -y espeak espeak-ng
+sudo apt -y install espeak espeak-ng
 echo

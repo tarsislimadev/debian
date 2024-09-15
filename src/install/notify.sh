@@ -6,6 +6,6 @@ sudo echo OK
 echo
 echo Install libnotify
 echo
-sudo apt update -y
-sudo apt install -y libnotify-bin
+sudo apt -y update
+sudo apt -y install libnotify-bin
 

@@ -6,6 +6,6 @@ sudo echo OK
 echo
 echo Installing nmap
 echo
-sudo apt-get -y update
-sudo apt-get -y install nmap
+sudo apt -y update
+sudo apt -y install nmap
 echo

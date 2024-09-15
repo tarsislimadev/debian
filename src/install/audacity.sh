@@ -7,7 +7,7 @@ echo
 echo Installing Authy
 echo
 sudo apt -y update
-sudo apt install -y audacity
+sudo apt -y install audacity
 
 echo
 echo Version of Authy
