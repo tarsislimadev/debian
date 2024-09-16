@@ -1,0 +1,1 @@
+docker run --rm -it   --network host   -v /media/neon/bdd1dc97-238a-4f44-b1ac-90363bfd5d11/Videos:/app   -w /app tmvdl/yt-dl:dlp-alpine yt-dlp -o '%(uploader)s/%(playlist)s/%(playlist_index)s - %(title)s.%(ext)s' "${1}" 
