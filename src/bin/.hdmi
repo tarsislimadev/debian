@@ -1,0 +1,9 @@
+#!/usr/bin/sh
+
+datetime=$( date +%Y%m%d%H%M%S )
+
+ffmpeg -t 5 \
+  -video_size 1920x1080 -framerate 25 \
+  -f x11grab -i :0.0 \
+  -f alsa -ac 2 -i hw:0 \
+  "/media/${USER}/bdd1dc97-238a-4f44-b1ac-90363bfd5d11/Videos/Youtube/x11grab.alsa.${datetime}.mp4"
