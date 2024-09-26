@@ -6,7 +6,7 @@ ingestserver="sao03.contribute.live-video.net"
 ingestserver="rio04.contribute.live-video.net"
 ingestserver="sao05.contribute.live-video.net"
 
-streamkey="live_608998690_jZu9S3COHZvXaMeBrc35kZRv7igRFk"
+. ~/.env
 
 ffmpeg \
   -t 10 -s 1280x720 \
