@@ -6,6 +6,6 @@ sudo systemctl disable kdeconnect
 
 sudo killall exim4 kdeconnectd
 
-sudo apt -y remove --purge cups kdeconnect exim4 bluetooth
+sudo apt -y remove --purge cups* kdeconnect* exim4* bluetooth*
 
 sudo apt -y autoremove --purge
