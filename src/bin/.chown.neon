@@ -1,1 +1,5 @@
-sudo chown neon:neon . -R 
+
+
+u="${USER}"
+
+sudo chown "${u}:${u}" . -R 
