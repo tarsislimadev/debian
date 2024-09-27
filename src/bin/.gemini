@@ -1,0 +1,9 @@
+#!/usr/bin/sh
+
+. ~/.env
+
+text="${1}"
+
+curl -sSL -X POST -H "Content-Type: application/json" \
+ -d "{'contents':[{'parts':[{'text':'${text}'}]}]}" \
+ "https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${generativelanguageapikey}"
