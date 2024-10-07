@@ -8,4 +8,4 @@ ffmpeg \
   -framerate 25 \
   -f x11grab -i :0.0 \
   -f alsa -ac 2 -i hw:0 \
-  "${youtubepath}/x11grab.alsa.${datetime}.mp4"
+  "${youtubepath}/desktop.${datetime}.mp4"
