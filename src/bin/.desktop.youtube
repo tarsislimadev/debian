@@ -3,12 +3,8 @@
 VBR="2500k"                                    # Bitrate de la vidéo en sortie
 FPS="30"                                       # FPS de la vidéo en sortie
 QUAL="medium"                                  # Preset de qualité FFMPEG
-YOUTUBE_URL="rtmp://a.rtmp.youtube.com/live2"  # URL de base RTMP youtube
-
-SOURCE="udp://239.255.139.0:1234"              # Source UDP (voir les annonces SAP)
 . ~/.env
 
-# YOUTUBEKEY="b0tx-k5be-6btr-rjbs-awpz"
 
 ffmpeg \
   -framerate 25 \
@@ -16,4 +12,4 @@ ffmpeg \
   -f alsa -ac 2 -i hw:0 \
   -vcodec libx264 -pix_fmt yuv420p -preset $QUAL -r $FPS -g $(($FPS * 2)) -b:v $VBR \
   -acodec libmp3lame -ar 44100 -threads 6 -qscale 3 -b:a 712000 -bufsize 512k \
-  -f flv "$YOUTUBE_URL/$YOUTUBEKEY"
+  -f flv "rtmp://a.rtmp.youtube.com/live2/$YOUTUBEKEY"
