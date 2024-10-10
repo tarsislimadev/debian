@@ -6,6 +6,6 @@ sudo systemctl disable kdeconnect
 
 sudo killall exim4 kdeconnectd
 
-sudo apt -y remove --purge cups* kdeconnect* exim4* bluetooth* xwayland* kwin-wayland* plasma-workspace-wayland* xwayland* dragonplayer* okular* libreoffice* gimp* imagemagick*
+sudo apt -y remove --purge cups* kdeconnect* exim4* bluetooth* xwayland* kwin-wayland* plasma-workspace-wayland* xwayland* dragonplayer* okular* libreoffice* gimp* imagemagick* gwenview*
 
 sudo apt -y autoremove --purge
