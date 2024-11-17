@@ -1,6 +1,6 @@
 # Debian-based installers scripts
 
-![GitHub Workflow Status (with event)](https://img.shields.io/github/actions/workflow/status/brtmvdl/debian/github-release.yml) [![github/license](https://img.shields.io/github/license/brtmvdl/debian)](https://img.shields.io/github/license/brtmvdl/debian)  [![github/stars](https://img.shields.io/github/stars/brtmvdl/debian?style=social)](https://img.shields.io/github/stars/brtmvdl/antify?style=social)
+[![github/license](https://img.shields.io/github/license/brtmvdl/debian)](https://img.shields.io/github/license/brtmvdl/debian)  [![github/stars](https://img.shields.io/github/stars/brtmvdl/debian?style=social)](https://img.shields.io/github/stars/brtmvdl/antify?style=social)
 
 ## social & donate
 
