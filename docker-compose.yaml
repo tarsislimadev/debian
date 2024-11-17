@@ -1,9 +1,0 @@
-
-version: '3'
-
-services:
-  upload:
-    image: tmvdl/node:surge
-    working_dir: '/app'
-    volumes:
-      - '.:/app'
