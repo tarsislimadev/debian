@@ -4,14 +4,10 @@
 
 datetime=$( date +%Y%m%d%H%M%S )
 
-# qrencodesrc=text=www.ffmpeg.org
-
-# desktop cam mic
-
 ffmpeg \
- -t 10 -s 1280x720 \
- -f x11grab -i :0.0 \
+ -s 1280x720 \
+ -f x11grab -i "${DISPLAY}" \
  -f v4l2 -i /dev/video0 \
- -f alsa -ac 2 -i hw:0 \
+ -f alsa -ac 2 -i "" \
  -filter_complex '[0]scale=1280:720[a0];[1]scale=128:72[b1];[b1]pad=1280:720:1140:640:0x00000000[a1];[a0][a1]overlay' \
- "${youtubepath}/x11grab.v4l2.alsa.${datetime}.mkv"
+ "cam+desktop+mic.${datetime}.mkv"
