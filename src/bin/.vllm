@@ -1,9 +1,0 @@
-#!/usr/bin/sh
-
-. ~/.env
-
-docker run --gpus all --ipc=host \
- -v ~/.cache/huggingface:/root/.cache/huggingface \
- --env "HUGGING_FACE_HUB_TOKEN=${HUGGING_FACE_HUB_TOKEN}" \
- -p 8000:8000 \
- vllm/vllm-openai sh
