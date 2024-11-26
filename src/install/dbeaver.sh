@@ -7,9 +7,9 @@ echo
 echo Installing DBeaver Community Edition
 echo
 
-sudo add-apt-repository -y ppa:serge-rider/dbeaver-ce
 sudo apt -y update
-sudo apt -y install dbeaver-ce
+sudo apt -y install wget
+wget https://dbeaver.io/files/dbeaver-ce_latest_amd64.deb
 
 echo
 [[ -e "$(which dbeaver)" ]] && echo DBeaver Installed
