@@ -17,11 +17,9 @@ echo
 echo Setting up Brave
 echo
 echo 'alias b="brave-browser-stable & " ' >> ~/.bashrc 
-echo
+
 
 echo
 echo Brave version
 echo
 brave-browser --version
-echo
-echo
