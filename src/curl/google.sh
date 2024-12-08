@@ -1,3 +1,3 @@
-curl -sSL duckduckgo.com > /dev/null
+curl -sSL google.com > /dev/null
 
 . google.sh &
