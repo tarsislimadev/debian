@@ -15,5 +15,3 @@ echo
 echo Blender version
 echo
 blender --version
-echo
-echo
