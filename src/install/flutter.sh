@@ -24,4 +24,4 @@ echo
 echo
 echo Flutter version
 echo
-
+flutter --version
