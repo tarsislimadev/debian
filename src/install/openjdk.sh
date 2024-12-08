@@ -7,5 +7,5 @@ echo
 echo Install OpenJDK
 echo
 sudo apt -y update
-sudo apt -y install openjdk-8-jre-headless
+sudo apt install -y $( apt search openjdk | grep jre-headless | head -n -1 - | cut -d / -f 1 )
 echo
