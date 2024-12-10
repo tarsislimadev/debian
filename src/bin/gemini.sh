@@ -1,5 +1,3 @@
-#!/usr/bin/sh
-
 . ~/.generativelanguageapikey
 
 text="${1}"
