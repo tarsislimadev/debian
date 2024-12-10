@@ -2,10 +2,10 @@
 
 echo Testing sudo
 sudo echo OK
+echo
 
 echo
-echo Install OBS and VLC
+echo Install VLC
 echo
-sudo add-apt-repository -y ppa:obsproject/obs-studio
 sudo apt -y update
 sudo apt -y install vlc
