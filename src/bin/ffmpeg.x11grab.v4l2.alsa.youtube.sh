@@ -1,12 +1,6 @@
-#!/usr/bin/sh
-
 . ~/.datetime
 
 . ~/.youtube_key
-
-echo
-echo "datetime: ${datetime}"
-echo
 
 ffmpeg \
  -s 1280x720 \
