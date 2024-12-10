@@ -1,4 +1,4 @@
- . ~/datetime
+ . ~/.datetime
 
 ffmpeg -y \
  -s 1280x720 \
