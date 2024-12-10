@@ -14,7 +14,7 @@ curl -sSL 'https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-
 sudo dpkg --configure -a
 
 sudo apt -y update
-sudo apt -y install "${VSCODE_PATH}"
+timeout 60 sudo apt -y install "${VSCODE_PATH}"
 rm -rf "${VSCODE_PATH}"
 
 echo
