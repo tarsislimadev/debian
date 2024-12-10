@@ -1,5 +1,3 @@
-#!/bin/bash
-
 echo Testing sudo
 sudo echo OK
 
