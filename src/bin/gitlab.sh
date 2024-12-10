@@ -1,5 +1,3 @@
-#!/usr/bin/sh
-
 . ~/.gitlab_runner_token
 
 docker run --rm -it --name gitlab-runner \
