@@ -1,8 +1,6 @@
-#!/usr/bin/sh
+ . ~/datetime
 
-datetime=$( date +%Y%m%d%H%M%S )
-
-ffmpeg \
+ffmpeg -y \
  -s 1280x720 \
  -f x11grab -i "${DISPLAY}" \
  -f v4l2 -i /dev/video0 \
