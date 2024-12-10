@@ -9,12 +9,14 @@ echo
 
 VERSION="2.0.21"
 
+FILENAME="kotlin-compiler-${VERSION}.zip"
+
 sudo apt -y update
 sudo apt -y install wget zip
 
-wget "https://github.com/JetBrains/kotlin/releases/download/v${VERSION}/kotlin-compiler-${VERSION}.zip"
-unzip "kotlin-compiler-${VERSION}.zip"
-rm -rf "kotlin-compiler-${VERSION}.zip"
+wget "https://github.com/JetBrains/kotlin/releases/download/v${VERSION}/${FILENAME}"
+unzip "${FILENAME}"
+rm -rf "${FILENAME}"
 
 sudo mv kotlinc /usr/share/kotlinc
 
