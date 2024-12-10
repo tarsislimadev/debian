@@ -1,3 +1,1 @@
-#!/usr/bin/sh
-
-docker-compoose run "${1}" sh
+docker run --rm -it --net host "${1}" sh
