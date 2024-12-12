@@ -1,4 +1,4 @@
- . ~/.datetime
+. ~/.datetime
 
 ffmpeg -y \
  -f v4l2 -i /dev/video0 \
