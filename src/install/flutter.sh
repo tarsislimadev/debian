@@ -3,25 +3,15 @@
 echo Testing sudo
 sudo echo OK
 
-echo
-echo Removing older Flutter
-echo
+FILENAME="flutter_linux_3.27.0-stable.tar.xz"
+PATHNAME="~/.flutter"
 
 echo
 echo Installing Flutter
 echo
-sudo apt -y update
-wget 'https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.3.10-stable.tar.xz'
-tar -xf 'flutter_linux_3.3.10-stable.tar.xz'
-mv flutter/ $HOME/.flutter/
-
-echo
-echo Setting up Flutter
-echo
-echo "declare -x PATH=$PATH:$HOME/.flutter/bin " >> $HOME/.bashrc
-
-echo
-echo
-echo Flutter version
-echo
-flutter --version
+sudo apt update -y
+sudo apt upgrade -y
+sudo apt install -y curl git unzip xz-utils zip libglu1-mesa clang cmake ninja-build pkg-config libgtk-3-dev liblzma-dev libstdc++-12-dev
+curl -O "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/${FILENAME}"
+tar -xf "${FILENAME}" -C "${PATHNAME}"
+echo "add ${PATHNAME} in PATH"
