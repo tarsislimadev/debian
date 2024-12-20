@@ -8,7 +8,7 @@
 
 ## how to use
 
-run on bash
+### run on bash
 
 ```sh
 curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/install/nvm.sh" | bash
