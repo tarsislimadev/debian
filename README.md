@@ -14,6 +14,14 @@ run on bash
 curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/install/nvm.sh" | bash
 ```
 
+### installer script file
+
+```sh
+sudo touch /usr/bin/i
+sudo chmod 777 /usr/bin/i
+echo 'curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/install/${1}.sh" | bash' > /usr/bin/i
+```
+
 ## license
 
 [MIT](./LICENSE)
