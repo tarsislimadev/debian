@@ -7,11 +7,11 @@ echo
 echo Installing DBeaver Community Edition
 echo
 
-FILENAME="dbeaver-ce_latest_amd64.deb"
-
 sudo apt -y update
 sudo apt -y install wget
-curl -O "https://dbeaver.io/files/${FILENAME}"
+FILENAME="dbeaver-ce_24.3.0_amd64.deb"
+wget "https://github.com/dbeaver/dbeaver/releases/download/24.3.0/${FILENAME}"
+sudo apt -y install "${FILENAME}"
 rm -rf "${FILENAME}"
 
 echo
