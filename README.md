@@ -22,6 +22,14 @@ sudo chmod 777 /usr/bin/i
 echo 'curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/install/${1}.sh" | bash' > /usr/bin/i
 ```
 
+### executable script file
+
+```sh
+sudo touch /usr/bin/b
+sudo chmod 777 /usr/bin/b
+echo 'curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/bin/${1}.sh" | bash' > /usr/bin/b
+```
+
 ## license
 
 [MIT](./LICENSE)
