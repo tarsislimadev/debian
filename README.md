@@ -22,6 +22,14 @@ sudo chmod 777 /usr/bin/i
 echo 'curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/install/${1}.sh" | bash' > /usr/bin/i
 ```
 
+### remover script file
+
+```sh
+sudo touch /usr/bin/r
+sudo chmod 777 /usr/bin/r
+echo 'curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/remove/${1}.sh" | bash' > /usr/bin/r
+```
+
 ### executable script file
 
 ```sh
