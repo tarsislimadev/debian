@@ -9,7 +9,7 @@ echo
 echo Installing AWS CLI
 echo
 sudo apt -y update
-sudo apt -y install awscli ec2-instance-connect
+sudo apt -y install awscli
 
 echo
 echo Version of AWS CLI
