@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo
-echo Testing sudo on Linux
+echo Testing sudo
 sudo echo OK
 echo
 
