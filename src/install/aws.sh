@@ -9,7 +9,7 @@ echo
 echo Installing AWS CLI
 echo
 sudo apt -y update
-sudo apt -y install awscli
+sudo apt install -y awscli
 
 echo
 echo Version of AWS CLI
