@@ -8,12 +8,6 @@
 
 ## how to use
 
-### run on bash
-
-```sh
-curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/install/nvm.sh" | bash
-```
-
 ### installer script file
 
 ```sh
@@ -36,6 +30,18 @@ echo 'curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/hea
 sudo touch /usr/bin/b
 sudo chmod 777 /usr/bin/b
 echo 'curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/bin/${1}.sh" | bash' > /usr/bin/b
+```
+
+### example: install "docker" using "i" executable file
+
+```sh
+i docker
+```
+
+### running directly on bash
+
+```sh
+curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/install/nvm.sh" | bash
 ```
 
 ## license
