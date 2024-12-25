@@ -38,7 +38,7 @@ echo 'curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/hea
 i docker
 ```
 
-### running directly on bash
+### running on bash
 
 ```sh
 curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/install/nvm.sh" | bash
