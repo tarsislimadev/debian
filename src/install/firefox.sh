@@ -4,7 +4,7 @@ echo Testing sudo
 sudo echo OK
 
 echo
-echo Installing ffmpeg
+echo Installing firefox
 echo
 
 sudo apt -y update
