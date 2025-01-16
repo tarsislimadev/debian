@@ -15,6 +15,8 @@ sudo dpkg --configure -a
 
 sudo apt -y update
 timeout 60 sudo apt -y install "${VSCODE_PATH}"
+
+echo rm -rf "${VSCODE_PATH}"
 rm -rf "${VSCODE_PATH}"
 
 echo
