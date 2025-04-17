@@ -32,6 +32,13 @@ sudo chmod 777 /usr/bin/b
 echo 'curl -sSL "https://raw.githubusercontent.com/tarsislimadev/debian/refs/heads/main/src/bin/${1}.sh" | bash' > /usr/bin/b
 ```
 
+### saver file
+
+```sh
+sudo touch /usr/bin/s
+sudo chmod 777 /usr/bin/s
+```
+
 ### example: install "docker" using "i" executable file
 
 ```sh
