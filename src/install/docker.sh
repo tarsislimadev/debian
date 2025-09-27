@@ -6,7 +6,7 @@ sudo echo OK
 echo
 echo Removing older Docker installations
 echo
-sudo apt -y remove --purge docker-* containerd.io
+for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove -y --purge $pkg; done
 sudo apt -y autoremove --purge
 
 echo
