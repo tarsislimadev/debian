@@ -8,8 +8,10 @@ echo
 echo
 echo Installing AWS CLI
 echo
-sudo apt -y update
-sudo apt install -y awscli
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+unzip awscliv2.zip
+sudo ./aws/install
+rm -rf awscliv2.zip ./aws/
 
 echo
 echo Version of AWS CLI
