@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# Script to install Flutter on Ubuntu
-
 # Update system packages
 sudo apt update -y
 sudo apt upgrade -y
