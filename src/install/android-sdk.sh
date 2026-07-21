@@ -29,6 +29,9 @@ echo "export PATH=\$PATH:\$ANDROID_HOME/cmdline-tools/latest/bin:\$ANDROID_HOME/
 # Reload bashrc
 source ~/.bashrc
 
+# 
+# sdkmanager --install "cmdline-tools;30" --sdk_root="${ANDROID_SDK_DIR}"
+
 # Accept licenses and install essential packages
 yes | sdkmanager --licenses
 sdkmanager "platform-tools" "platforms;android-34" "build-tools;34.0.0"
